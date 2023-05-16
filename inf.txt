@@ -1,0 +1,69 @@
+Pagina - NetVision.com
+
+<header>
+	Home //pagina inicial.
+	Servicos //sobre os planos Mes.
+	Explorar //a experiencia do assinante Exe: os generos.
+</header>
+
+# Home:
+	<p> Viva histórias inéditas com personagens inesquecíveis, além de séries exclusivas que só o Net Vision tem. </p>
+
+	<span>Quer assistir? informe seu email para criar ou reiniciar sua assinatura</span>	
+
+	<input email>
+
+
+# Servicos:
+	
+				 				<span> Escolha seu plano <span>
+
+	
+	*Aproveite em todos os seus dispositivos.     *Tenha conteúdo em alta definição, com qualidade 4K.    	*Assista em até 3 telas ao mesmo tempo.
+		
+	
+		3 meses							12 meses						1 mes
+		R$ 79,90						R$ 245,90						R$ 35,90
+	* escolha o plano trimestral				*escolha o plano trimestral				*escolha o plano mensal
+
+
+
+	
+								Uma experiencia simples e completa
+
+
+
+
+	<img algum filme>						<img algum filme>					<img algum filme>
+	
+
+	<img algum filme>						<img algum filme>					<img algum filme>
+
+# Explorar:
+
+	
+	     img check						          img relogio						      img ingrenagem
+             QUALIDADE							  INTEGIDADE						      AGILIDADE
+	
+
+
+							<span>Alguma pergunta? A gente tem a resposta.</span>
+		
+	*O que é Net Vision?
+
+	*O Net Vision tem teste grátis?
+
+	*O que há de novo com Net Vision?
+
+	*Onde posso assistir?
+
+	*O que eu posso assistir na Net Vision?
+
+	*O como faço para cancelar?
+
+	*O Tempo médio de atendimento: atendimento ao cliente/atendimento ao cliente WhatsApp
+
+
+	
+								       Desenvolvido por s2k_team
+		
