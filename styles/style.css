@@ -22,8 +22,13 @@ body{
     color: var(--cor-font);
 
 
-    background-color: rgb(10, 10, 10);
-
+    /* background-color: rgb(10, 10, 10); */
+    /* background-image: linear-gradient(103.24deg, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%),url(../complemento/BR-pt-20230515-popsignuptwoweeks-perspective_alpha_website_large.jpg); */
+    background-image: url(../complemento/plans_background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
 }
 header{
     background-color: var(--cor-bg);
@@ -102,6 +107,23 @@ nav button{
 
     color: var(--cor-font);
     background-color: blue; /*cor temporaria*/
+    
+}
+@media (max-width:468px){
+    header{
+        display:grid;
+        justify-content: normal; 
+    }
+    header img {
+        justify-self: left; 
+    }
+     header ul{
+        margin: 5px 1px 1px 15px
+    }
+    header a{
+        margin: 4px;
+        text-transform: uppercase;
+    }
     
 }
 @media (max-width:768px){
