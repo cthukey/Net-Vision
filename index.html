@@ -14,27 +14,36 @@
 </head>
 <body>
     <header>
-        <img src="./complemento/VARIACAO_VARIACAO_3.png" alt="Logo do Site" width="220px">
-           
-        <ul>
-            <a href="/home" onclick="route()">Home</a>
-            <a href="/servicos" onclick="route()">Serviços</a>
-            <a href="/explorar" onclick="route()">Explorar</a>
-            <a href="/404" onclick="route()"></a>
+      <img src="./complemento/VARIACAO_VARIACAO_3.png" alt="Logo do Site" width="220px">
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+          >Menu<span class="hamburger"></span>
+        </button>
+        <ul class="menu" id="menu" role="menu">
+          <a href="/home" onclick="route()">Home</a>
+          <a href="/servicos" onclick="route()">Serviços</a>
+          <a href="/explorar" onclick="route()">Explorar</a>
+          <a href="/404" onclick="route()"></a>
         </ul>
         
+      </nav>
     </header>
     
     <nav id="page">
-        <p class="lorem1">Viva histórias inéditas com 
-        <br>    
-        séries exclusivas que só o Net Vision tem</p>
-        <span class="lorem2">Quer assistir? informe seu email para criar ou reiniciar sua assinatura.</span>
+      <p class="lorem1">Viva histórias inéditas com 
+      <br>    
+      séries exclusivas que só o Net Vision tem</p>
+      <span class="lorem2">Quer assistir? informe seu email para criar ou reiniciar sua assinatura.</span>
         
-        <form action="">
-            <input type="email" name="" id="">
+      <form action="">
+        <input type="email" name="" id="">
             
-            <div class="wrapper">
+        <div class="wrapper">
                 <a class="cta" href="#">
                   <span>NEXT</span>
                   <span>
@@ -47,12 +56,11 @@
                     </svg>
                   </span> 
                 </a>
-            </div>
-        
-        </form>
+        </div>
+      </form>
     </nav>
 
     
 </body>
-<script src="./scripts/index.js"></script>
+<script defer src="./scripts/index.js"></script>
 </html>
