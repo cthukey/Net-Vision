@@ -39,7 +39,6 @@ header img{
 }
 header ul{
     display: flex;
-    gap: 1rem;
     margin-right: 1rem;
 }
 header a{
@@ -232,71 +231,71 @@ path.two {
 
 
 
- @media (max-width: 600px) {
-.menu {
-    display: block;
-    position: absolute;
-    top: 11.5000rem;
-    left: 0;
-    background: rgb(25, 66, 189);
-    text-align: center;
-    width: 100%;
-    height: 0;
-    z-index: 1;
-    visibility: hidden;
-    overflow-y: hidden;
-    transition: 0.5s;
-}
-.menu a {
-    padding: 1rem 0;
-    margin-inline: 1rem;
-    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-    border-radius: 0;
-}
-.btn-menu {
-    background: none;
-    border: none;
-    font: inherit;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #fff;
-    padding: 1rem 0;
-    cursor: pointer;
-}
-.hamburger {
-    border-top: 0.125rem solid;
-    width: 1.25rem;
-}
-.hamburger::after,
-.hamburger::before {
-    content: " ";
-    display: block;
-    width: 1.25rem;
-    height: 0.125rem;
-    background: currentColor;
-    margin-top: 0.3125rem;
-    position: relative;
-    transition: 0.3s;
-}
-.nav.active .menu {
-    /* height: calc(100vh - 4.6875rem); */
-    height: 26.5vh;
-    visibility: visible;
-    overflow-y: auto;
-}
-.nav.active .hamburger {
-    border-top-color: transparent;
-}
-.nav.active .hamburger::before {
-    transform: rotate(135deg);
-}
-.nav.active .hamburger::after {
-    transform: rotate(-135deg);
-    top: -0.3605rem;
+ @media (max-width: 600px){
+    .menu {
+        display: block;
+        position: absolute;
+        top: 7.5000rem;
+        left: 0;
+        background: rgb(25, 66, 189);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #fff;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav.active .menu {
+        /* height: calc(100vh - 4.6875rem); */
+        height: 26.5vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburger::after {
+        transform: rotate(-133deg);
+        top: -0.4975rem;
 
-}  
-
+    }  
+}
 
 
 /**************@MEDIA PAGE****************/
@@ -305,17 +304,20 @@ path.two {
 
 @media (max-width:468px){
     header{
-        display:grid;
-        justify-content: normal; 
+        display:flex;
+        justify-content: space-between; 
 
         background: transparent;
         backdrop-filter: blur(10px);
         transition: 0.5s;
     }
-    header img {
-        justify-self: left; 
+    header .btn-menu{
+        margin-right: 1rem;
     }
-     header ul{
+    /* header img {
+        justify-self: left; 
+    } */
+    header ul{
         margin: 5px 1px 19px 15px
     }
     header a{
@@ -324,30 +326,13 @@ path.two {
     }
     nav .lorem1{
         margin-top: 20px;
-    }
-    
+    } 
 }
-@media (max-width:768px){
-    header ul a{
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-    header ul a:hover{
-        -webkit-filter: drop-shadow(15px 10px 5px rgb(255, 255, 255));
-        filter: drop-shadow(15px 10px 5px rgb(255, 255, 255));
-    }
-    nav form{
-        /* background-color: antiquewhite; */
-        display: grid;
-    }
-    nav p{
-        font-size: 35px;
-    }
-    form input{
-        width: 50%;
-    }
-}
+
 @media (max-width:600px){
+    header .btn-menu{
+        margin-right: 2rem;
+    }
     nav .lorem2{
         font-size: 17px;
     }
@@ -358,3 +343,27 @@ path.two {
         margin-bottom: 3rem;
     }
 }
+@media (max-width:768px){
+    header ul a{
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    header ul a:hover{
+        -webkit-filter: drop-shadow(15px 10px 5px rgb(255, 255, 255));
+        filter: drop-shadow(15px 10px 5px rgb(255, 255, 255));
+    }
+    header .nav{
+        margin-left: 2rem;
+    }
+    nav form{
+        /* background-color: antiquewhite; */
+        display: grid;
+    }
+    nav p{
+        font-size: 35px;
+    }
+    form input{
+        width: 50%;
+    } 
+}
+
