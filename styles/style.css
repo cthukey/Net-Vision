@@ -122,48 +122,65 @@ nav input{
 .wrapper {
   display: flex;
   justify-content: center;
-  height: 74px;
+  height: 64px;
   width: 280px;
 }
 
 .cta {
     display: flex;
-    padding: 10px 45px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    color: white;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-size: 30px; */
+    /* color: white; */
     background: #6225E6;
     transition: 1s;
     box-shadow: 6px 6px 0 black;
     transform: skewX(-15deg);
 }
+.cta input{
+    background: transparent;
+    margin-top: -2rem;
+    color: wheat;
+    font-size: 30px;
+    font-weight: bold;
+    width: 97px;
+    height: 55px;
 
+    cursor: pointer;
+}
 .cta:focus {
    outline: none; 
 }
-
 .cta:hover {
     transition: 0.5s;
     box-shadow: 10px 10px 0 #FBC638;
 }
 
-.cta span:nth-child(2) {
+/* .cta span:nth-child(2) {
     transition: 0.5s;
-    /* margin-right: 0px; */
-}
+    /* margin-right: 0px; 
+} */
 
-.cta:hover  span:nth-child(2) {
+/* .cta:hover  span:nth-child(2) {
     transition: 0.5s;
-    /* margin-right: 45px; */
-}
+    /* margin-right: 45px; 
+} */
 
-span {
+/* span {
     transform: skewX(15deg);
     font-weight: bold;
-}
-  
+} */
+
+/* .cta input{
+    transform: skewX(15deg);
+    font-weight: bold;
+} */
+
+
 /**************SVG****************/
+
+
 
 path.one {
     transition: 0.4s;
@@ -335,6 +352,9 @@ path.two {
     nav .lorem1{
         margin-top: 20px;
     } 
+    nav .wrapper{
+        margin-left: 2rem;
+    }
 }
 
 @media (max-width:600px){
@@ -349,6 +369,9 @@ path.two {
     }
     form{
         margin-bottom: 3rem;
+    }
+    nav .wrapper{
+        margin-left: 2rem;
     }
 }
 @media (max-width:768px){
@@ -373,5 +396,8 @@ path.two {
     form input{
         width: 50%;
     } 
+    nav .wrapper{
+        margin-left: 2rem;
+    }
 }
 
