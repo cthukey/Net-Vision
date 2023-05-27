@@ -3,28 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 main{
     text-align: center;
 }
 main .h1{
     font-size: 17px;
+    margin-top: 8rem;
 }
+
+
+
+/************** LISTA ****************/
+
+
+
 .lista{
     visibility: hidden;
     overflow: hidden;
 }
+
+
+
+/************** CARD ****************/
+
+
+
 .card{
     max-width: 1200px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
-
+    gap: 3rem;
 }
 .card_div{
     background: linear-gradient( 180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100% );
-    
     padding: 25px;
+    
+    border-radius: 8px;
+    border-bottom: solid #d1c301 1px;
 }
 .internoCard{
     width: 100%;
@@ -32,6 +50,8 @@ main .h1{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    height: 168px;
 }
 .internoCard .span_1, .span_2{ 
     font-weight: 700;
@@ -39,3 +59,21 @@ main .h1{
     line-height: 38px;
 }
 
+
+
+/**************@MEDIA PAGE****************/
+
+
+
+@media (max-width: 910px){
+    main{
+        display: flex;
+        display: table-column;
+        place-content: center;
+    }
+    
+    main .card_div{
+        max-width: 910px;
+        margin: 0 .4rem 0 1rem;
+    }
+}
