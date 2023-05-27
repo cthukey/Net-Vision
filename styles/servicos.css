@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    text-align: center;
+}
+main .h1{
+    font-size: 17px;
+}
+.lista{
+    visibility: hidden;
+    overflow: hidden;
+}
+.card{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+.card_div{
+    background: linear-gradient( 180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100% );
+    
+    padding: 25px;
+}
+.internoCard{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.internoCard .span_1, .span_2{ 
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
