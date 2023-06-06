@@ -6,14 +6,34 @@
 
 main{
     text-align: center;
+
 }
 main .h1{
     font-size: 17px;
     margin-top: 8rem;
 }
+.textServicos{
+    visibility: hidden;
+    overflow: hidden;
+}
+.textServicos .p-span{
+   font-size: 22px;
+   font-weight: 500;
+   font-family: system-ui;
+}
+.textServicos .span-novaHera{
+    color: #ff7434;
+    font-weight: bold;
+    
+}
+.textServicos .span-netVision{
+    color: rgb(0, 47, 255);
+    font-weight: bold;
+}
 
-
-
+.arte img{
+    background-repeat: no-repeat;
+}
 /************** LISTA ****************/
 
 
@@ -63,10 +83,39 @@ main .h1{
 
 /**************@MEDIA PAGE****************/
 
+@media (max-width:500px){
+    .textServicos{
+        visibility: visible;
+        overflow: visible;
+    }
+    .imgAcima500px{
+        display: none;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    .arte{
+        visibility: visible;
+        overflow: visible;
+        display: inline-table;
+        margin: 4rem 0.4rem 0 1rem;
+        background: linear-gradient(0deg, rgba(1, 7, 39, 0.651), rgb(255, 166, 0));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        
+        border-radius: 8px;
+        width: 316px;
+        height: 225px;
+    }
+    .arte img{
+        /* -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+        mask-image: linear-gradient(to top, transparent 5%, black 100%); */
+    
+        border-radius: 8px;
+    }   
 
-
-@media (max-width: 910px){
-    main{
+}
+/* 910px */
+@media (min-width: 500px){
+    /* main{
         display: flex;
         display: table-column;
         place-content: center;
@@ -75,5 +124,9 @@ main .h1{
     main .card_div{
         max-width: 910px;
         margin: 0 .4rem 0 1rem;
+    } */
+    .arte .imgNeymar{
+        display: none;
     }
+
 }
