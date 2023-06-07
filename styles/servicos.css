@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.arteHeader{
+    background-image:url(../complemento/BR-pt-20230515-popsignuptwoweeks-perspective_alpha_website_large.jpg) ;
+    background-size: cover;
+    min-width: 910px;
+    height: 100vh;  
+}
 
 main{
     text-align: center;
@@ -83,7 +89,11 @@ main .h1{
 
 /**************@MEDIA PAGE****************/
 
-@media (max-width:500px){
+@media (max-width:600px){
+    
+    .arteHeader{
+        display: none;
+    }
     .textServicos{
         visibility: visible;
         overflow: visible;
@@ -113,20 +123,82 @@ main .h1{
     }   
 
 }
-/* 910px */
-@media (min-width: 500px){
-    /* main{
+/* 910px, and (max-width: 910){*/
+
+@media (min-width: 600px){
+    .arteHeader{
+
+        /* background-size: cover;
+        width: 100%; */
+        
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        text-align: center;
+    }
+    .arteHeader .divHeader p{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .arteHeader .divHeader strong{        
+        font-size: 17px;
+        font-weight: 500;
+    }
+    main{
         display: flex;
         display: table-column;
         place-content: center;
     }
-    
     main .card_div{
-        max-width: 910px;
-        margin: 0 .4rem 0 1rem;
-    } */
-    .arte .imgNeymar{
+        width: 910px;
+        /* margin: 0 .4rem 0 1rem; */
+        margin: auto;
+        
+    } 
+    .arte{
+        display: none;
+    }
+    .textServicos{
         display: none;
     }
 
+}
+
+@media (min-width:600px) and (max-width:910px){
+    
+    .arteHeader{
+
+        /* background-size: cover;
+        width: 100%; */
+        
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        text-align: center;
+    }
+    .arteHeader .divHeader p{
+        width: 700px;
+        margin: auto;
+    }
+    .arteHeader .divHeader strong{        
+        font-size: 17px;
+        font-weight: 500;
+    }
+    main{
+        display: flex;
+        display: table-column;
+        place-content: center;
+    }
+    main .card_div{
+        width: 910px;
+        /* margin: 0 .4rem 0 1rem; */
+        margin: auto;
+        
+    } 
+    .arte{
+        display: none;
+    }
+    .textServicos{
+        display: none;
+    }
 }
