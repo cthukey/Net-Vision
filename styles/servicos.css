@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 .arteHeader{
-    background-image:url(../complemento/BR-pt-20230515-popsignuptwoweeks-perspective_alpha_website_large.jpg) ;
+    background-image:url(../complemento/imgHeader);
     background-size: cover;
-    min-width: 910px;
+    min-width: 4%;
     height: 100vh;  
 }
-
 main{
     text-align: center;
 
@@ -150,7 +149,7 @@ main .h1{
         place-content: center;
     }
     main .card_div{
-        width: 910px;
+        width: 80%;
         /* margin: 0 .4rem 0 1rem; */
         margin: auto;
         
@@ -165,7 +164,6 @@ main .h1{
 }
 
 @media (min-width:600px) and (max-width:910px){
-    
     .arteHeader{
 
         /* background-size: cover;
@@ -190,7 +188,7 @@ main .h1{
         place-content: center;
     }
     main .card_div{
-        width: 910px;
+        width: 80%;
         /* margin: 0 .4rem 0 1rem; */
         margin: auto;
         
