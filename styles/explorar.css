@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
 }
-:root{
-    font-family: "Lato",Sans-serif;
-}
 .section{
     background-color: #32589a;
     padding: 10px;
@@ -21,13 +18,22 @@
 }
 .section .divInterior p{
     font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+
 
 }
-.section strong{
+.section strong{    
     display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
     text-align: center;
     justify-content: center;
     
+}
+.section .baixo{
+    margin-bottom: 25px;
 }
 
 
@@ -51,6 +57,8 @@ footer{
     background-color: #ffa500 ;
 }
 .divFooter{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     margin-top: -10px;
 
     display: grid;
@@ -64,11 +72,15 @@ footer{
 }
 .divFooter .p2-atendimento{
     font-size: 19px;
+    font-family: "Lato",Sans-serif;
     font-weight: 500;
 }
 .divFooter .p3-whatsapp{
-    font-weight: 800;
     font-size: 27px;
+    font-family: Sans-serif;
+    font-weight:800
+
+    
 }       
 
 .divFooter button{
