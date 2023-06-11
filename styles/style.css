@@ -84,6 +84,11 @@ nav .lorem2{
 
     margin-bottom: 20px;
 }
+nav .nomeNT{
+    color: #6225E6;
+    /* text-shadow: 0 0 0.2em rgb(146, 129, 255), 0 0 0.1em rgb(161, 147, 255),0 0 0.2em rgb(124, 103, 255) */
+    text-shadow: rgb(76, 52, 180) 1px 1px 5px;
+}
 
 
 form{
