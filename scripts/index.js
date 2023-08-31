@@ -1,3 +1,4 @@
+//rotas
 const routes = {
     "/home":"/pages/home.html",
     "/servicos":"/pages/servicos.html",
@@ -17,7 +18,7 @@ function route(event){
 
 function handle(){
     const {pathname} = window.location
-    console.log(pathname)
+    // console.log(pathname)
     const route = routes[pathname] || routes[404] 
     
     fetch(route)
@@ -31,25 +32,6 @@ function handle(){
 
 
 // menu.JS
-
-
-
-
-// const nav = document.querySelector('.nav')
-// const btnMenu = document.querySelector('.btn-menu')
-// const menu = document.querySelector('.menu')
-
-
-
-// function handleButtonClick(event){
-
-// }
-
-
-// btnMenu.addEventListener("click",handleButtonClick)
-
-
-
 
 const nav = document.querySelector(".nav");
 const btnMenu = document.querySelector(".btn-menu");
